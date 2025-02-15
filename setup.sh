@@ -19,7 +19,8 @@ git clone https://github.com/MiguelMFR/trabalho-aws-index.git /var/www/html/ | t
 chown -R apache:apache /var/www/html/
 chmod -R 755 /var/www/html/
 
+sleep 10
 # Envia solicitação POST
-curl -X POST -d "nome=Miguel" https://difusaotech.com.br/lab/aws/index.php | tee -a $LOG_FILE
+curl -X POST -d "nome=Miguel Ferreira" https://difusaotech.com.br/lab/aws/index.php | tee -a $LOG_FILE
 
 echo "Setup concluído!" | tee -a $LOG_FILE
